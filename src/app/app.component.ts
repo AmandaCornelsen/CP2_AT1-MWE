@@ -9,11 +9,12 @@ import { Exercicio6Component } from './components/exercicio6/exercicio6.componen
 import { Exercicio7Component } from './components/exercicio7/exercicio7.component';
 import { Exercicio8Component } from './components/exercicio8/exercicio8.component';
 import { Exercicio9Component } from './components/exercicio9/exercicio9.component';
+import { Exercicio10Component } from './components/exercicio10/exercicio10.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Exercicio1Component, Exercicio2Component, Exercicio3Component, Exercicio4Component, Exercicio5Component, Exercicio6Component, Exercicio7Component, Exercicio8Component, Exercicio9Component],
+  imports: [RouterOutlet, Exercicio1Component, Exercicio2Component, Exercicio3Component, Exercicio4Component, Exercicio5Component, Exercicio6Component, Exercicio7Component, Exercicio8Component, Exercicio9Component, Exercicio10Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
