@@ -1,0 +1,16 @@
+<h1>Condicional com if e else</h1>
+
+<button (click)="menorDeIdade()">-</button>
+
+<input type="number" (change)="trocarIdade($event) " [value]="idade">
+
+<button (click)="maiorDeIdade()">+</button>
+
+
+<div>
+  @if (idade >= 18) {
+    <p>Acesso permitido!</p>
+  } @else {
+    <p>Acesso negado! (Idade mínima: 18 anos)</p>
+  }
+</div>
