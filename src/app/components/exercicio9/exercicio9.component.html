@@ -1,0 +1,11 @@
+<h1>Lista de produtos condicionais</h1>
+ 
+  @for (produto of produtos; track produto.nome) {
+     @if (produto.promocao == true) {
+         <li ngClass="promocao">Nome: {{produto.nome}} Preco: {{produto.preco}} Promocao: {{produto.promocao}}</li>
+     }@else {
+         <li>Nome: {{produto.nome}} Preco: {{produto.preco}} Promocao: {{produto.promocao}}</li>
+     }
+ }@empty {
+     <p>Nenhum produto cadastrado</p>
+ }
