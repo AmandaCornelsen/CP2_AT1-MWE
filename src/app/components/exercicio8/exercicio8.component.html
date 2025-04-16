@@ -1,0 +1,25 @@
+<h1>Sistema de login</h1>
+ 
+ <form action="">
+     Insira seu email:<input type="email" required>
+     Insira sua senha:<input type="number" required min="6">
+     <input type="submit" value="Enviar">
+ </form>
+
+ <form (submit)="onSubmit()">
+    <div>
+        <label>Insira seu email:</label>
+        <input type="email" [(ngModel)]="email" name="email" required>
+    </div>
+
+    <div>
+        <label>Insira sua senha:</label>
+        <input type="password" [(ngModel)]="senha" name="senha" required minlength="6">
+    </div>
+
+    <button type="submit">Enviar</button>
+
+    <div *ngIf="mensagem">
+        {{mensagem}}
+    </div>
+</form>
