@@ -1,0 +1,9 @@
+<h1>Lista dinâmica com for</h1>
+
+<ul>
+  @for (listaCompra of listaCompra; track $index) {
+    <li>{{listaCompra}} - {{$index}}  </li>
+  } @empty {
+    <p>Não há itens na lista de compras</p>
+  }
+</ul>
