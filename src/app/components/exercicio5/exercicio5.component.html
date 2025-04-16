@@ -1,0 +1,16 @@
+<h1>Switch com múltiplos cases</h1>
+
+<label for="selector"> Selecione um status:</label>
+<select id="selector" (change)="trocarValor($event)">
+<option value="pendente">Pendente</option>
+<option value="enviado">Enviado</option>
+<option value="entregue">Entregue</option>
+<option value="desconhecido">Desconhecido</option>
+</select>
+
+<v [ngSwitch]="status">
+<p *ngSwitchCase="'pendente'">Aguardando confirmação</p>
+<p *ngSwitchCase="'enviado'">Pedido a caminho</p>
+<p *ngSwitchCase="'entregue'">Pedido entregue</p>
+<p *ngSwitchDefault>Status desconhecido</p>
+
