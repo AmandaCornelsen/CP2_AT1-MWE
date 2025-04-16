@@ -5,11 +5,12 @@ import { Exercicio2Component } from './components/exercicio2/exercicio2.componen
 import { Exercicio3Component } from './components/exercicio3/exercicio3.component';
 import { Exercicio4Component } from './components/exercicio4/exercicio4.component';
 import { Exercicio5Component } from './components/exercicio5/exercicio5.component';
+import { Exercicio6Component } from './components/exercicio6/exercicio6.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Exercicio1Component, Exercicio2Component, Exercicio3Component, Exercicio4Component, Exercicio5Component],
+  imports: [RouterOutlet, Exercicio1Component, Exercicio2Component, Exercicio3Component, Exercicio4Component, Exercicio5Component, Exercicio6Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

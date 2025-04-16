@@ -1,1 +1,9 @@
-<p>exercicio6 works!</p>
+<h1>Lista de objetos com for</h1>
+
+<ul>
+  @for(item of usuarios; track $index) {
+    <li>Nome: {{item.nome}}, Idade: {{item.idade}}</li>
+  } @empty {
+    <p>Não há itens na lista</p>
+  }
+</ul>
