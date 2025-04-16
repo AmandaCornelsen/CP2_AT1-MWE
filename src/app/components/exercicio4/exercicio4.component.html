@@ -1,0 +1,12 @@
+<h1>Lista com ações dinâmicas</h1>
+
+<ul>
+  @for ( item of tarefas; track item; let i = $index) {
+    <li>
+      {{item}}
+      <button (click)="removerItem(i)"> Remover</button>
+    </li>
+  } @empty {
+    <p>Lista de afazeres vazia!</p>
+  }
+</ul>
